@@ -25,15 +25,15 @@
                 default_layer {
                         label = "COLEMAK";
 // -----------------------------------------------------------------------------------------
-//   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
-//   |Sft-A|  R  |  S  |  I  |  G  |   |  K  |  N   |  E  |  I  |  O  |
-//   |  Z  |  X  |  C  |  D  |  V  |   |  M  |  H   |  ,  |  .  |  /  |
+//   |  Q  |  W  |  F  |  P  |  B  |    |  J  |  L   |  U  |  Y  | BKSP|
+//   |Sft-A|  R  |  S  |  I  |  G  |    |  K  |  N   |  E  |  I  |  O  |
+//   |  Z  |  X  |  C  |  D  |  V  |    |  M  |  H   |  ,  |  .  |  /  |
 //               |     |Gm-Sys| SPC |   | ENT |L-Num| ALT |
                         bindings = <
    &kp Q           &kp W    &kp F      &kp P     &kp B         &kp J     &kp L    &kp I       &kp O     &kp BSPC   
    &ht_bl LSHFT A  &kp R    &kp S      &kp I     &kp G         &kp K     &kp N    &kp E       &kp I     &kp O
    &kp Z           &kp X    &kp C      &kp D     &kp V         &kp M     &kp H    &kp COMMA   &kp DOT   &kp FSLH
-                            &trans     &td0     &kp SPACE     &kp RET   &mo 1    &kp RALT 
+                            &trans     &to2      &kp SPACE     &kp RET   &mo 1    &kp RALT 
                         >;
                 };
                 num_layer {
@@ -51,7 +51,7 @@
                         >;
                 };
 
-				sys_layer {
+		sys_layer {
                         label = "SYSTEM";
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
@@ -62,7 +62,7 @@
    &kp N1     &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
    &kp N6     &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
    &kp LCTRL   &kp Z   &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                       &trans   &trans   &kp SPACE   &trans       &trans       &trans
+                       &to 0    &to3     &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
                 game_layer {
@@ -76,10 +76,10 @@
    &kp ESC     &kp Q   &kp W   &kp E   &kp R       &trans       &trans       &trans       &trans       &trans
    &kp LSHFT   &kp A   &kp S   &kp D   &kp F       &trans       &trans       &trans       &trans       &trans
    &kp LCTRL   &kp Z   &kp X   &kp C   &kp V       &trans       &trans       &trans       &trans       &trans
-                       &to 0   &mo 3   &kp SPACE   &kp RET      &trans       &trans
+                       &to 0   &mo 4   &kp SPACE   &kp RET      &trans       &trans
                         >; 
                 };
-				gamenum_layer {
+		gamenum_layer {
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
