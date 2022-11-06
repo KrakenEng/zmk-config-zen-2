@@ -9,8 +9,8 @@
 #define GAMENUM 4
 
 #include "keypos.h"       // Used to define keys for combos
-#include "combos.dtsi"    // Include after defining layers
-#include "tapdance.dtsi"  // Tap dance combos
+//#include "combos.dtsi"    // Include after defining layers
+//#include "tapdance.dtsi"  // Tap dance combos
 
 / {
   chosen {
