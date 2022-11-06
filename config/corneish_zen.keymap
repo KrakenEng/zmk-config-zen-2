@@ -5,6 +5,8 @@
 #define DEFAULT 0
 #define NUM     1
 #define FUN     2
+#define GAME    3
+#define GAMENUM 4
 
 / {
   chosen {
