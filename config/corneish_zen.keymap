@@ -8,13 +8,6 @@
 #define GAME    3
 #define GAMENUM 4
 
-#define QUICK_TAP_MS 175
-
-//&ht {  // tap config
-//   flavor = "balanced";
-//    tapping-term-ms = <230>;
-//    quick-tap-ms = <QUICK_TAP_MS>;
-//    };
 
 / {
   chosen {
