@@ -4,7 +4,7 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define FUN     2
+#define TRI     2
 #define GAME    3
 #define GAMENUM 4
 
@@ -31,7 +31,7 @@
    &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp U   &kp BKSP    
    &hp A &kp R &kp S &kp T &kp G   &kp K &kp N  &kp E     &kp I   &kp O 
    &kp Z &kp X &kp C &kp D &kp V   &kp M &kp H  &kp COMMA &kp DOT &kp FSLH 
-                  &kp N1 &to 2 &kp SPACE   &kp RET &mo 1 &kp RALT
+                  &kp LGUI &to 2 &kp SPACE   &kp RET &mo 1 &kp RALT
                         >;
                 };
                 num_layer {
@@ -49,7 +49,7 @@
                         >;
                 };
 
-                fun_layer {
+                tri_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
