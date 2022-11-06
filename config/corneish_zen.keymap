@@ -34,7 +34,7 @@
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-                num_layer {
+                               num_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |F1-  |F2-  |F3-  |F4-  |F5-  |   |  -  |  7  |  8  |  9  |  *  |
@@ -42,10 +42,10 @@
 // |     |     |     |     |     |   |  0  |  1  |  2  |  3  |  .  |
 //             |L-Def|L-Def| SPC |   | ENT | BKSP|     |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
-   &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans 
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &trans       &trans       &trans       &trans       &trans         &kp MINUS   &kp N7     &kp N8     &kp N9   &kp STAR 
+   &trans       &trans       &trans       &trans       &trans         &kp PLUS    &kp N4     &kp N5     &kp N6   &kp FSLH 
+   &trans       &trans       &trans       &trans       &trans         &kp N0      &kp N1     &kp N2     &kp N3   &kp DOT 
+                             &to 0        &to 0        &kp SPACE      &kp RET     &kp BSPC   &trans
                         >;
                 };
 
