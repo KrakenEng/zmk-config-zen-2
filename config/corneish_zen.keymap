@@ -4,9 +4,8 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define FUN     2
-#define GAME    3
-#define GAMENUM 4
+#define GAME    2
+#define GAMENUM 3
 
 //#include "keypos.h"       // Used to define keys for combos
 //#include "combos.dtsi"    // Include after defining layers
@@ -54,20 +53,6 @@
                         >;
                 };
 
-		fun_layer {
-                        label = "FUNCTN";
-// -----------------------------------------------------------------------------------------
-// |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
-// |   6   |  7  |  8  |  9  |   0   |   |     |     |     |     |     |
-// |L-Ctrl |  Z  |  X  |  C  |   V   |   |     |     |     |     |     |
-//               |L-Def|L-Game|  SPC |   |     |     |     |
-                        bindings = <
-   &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
-   &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                        &to 0    &to3     &kp SPACE   &trans       &trans       &trans
-                        >; 
-                };
 
                 game_layer {
                         label = "GAMING";
@@ -80,7 +65,7 @@
    &kp ESC     &kp Q   &kp W   &kp E   &kp R       &trans       &trans       &trans       &trans       &trans
    &kp LSHFT   &kp A   &kp S   &kp D   &kp F       &trans       &trans       &trans       &trans       &trans
    &kp LCTRL   &kp Z   &kp X   &kp C   &kp V       &trans       &trans       &trans       &trans       &trans
-                       &to 0   &mo 4   &kp SPACE   &kp RET      &trans       &trans
+                       &to 0   &mo 3   &kp SPACE   &kp RET      &trans       &trans
                         >; 
                 };
 
@@ -95,7 +80,7 @@
    &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
    &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
    &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                       &trans   &trans   &kp SPACE   &trans       &trans       &trans
+                        &trans   &trans   &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
         };
