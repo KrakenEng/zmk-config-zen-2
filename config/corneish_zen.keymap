@@ -4,7 +4,7 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define SYS     2
+#define FUN  2
 #define GAME    3
 #define GAMENUM 4
 
@@ -28,7 +28,7 @@
 //   |  Q  |  W  |  F  |  P  |  B  |    |  J  |  L   |  U  |  Y  | BKSP|
 //   |Sft-A|  R  |  S  |  I  |  G  |    |  K  |  N   |  E  |  I  |  O  |
 //   |  Z  |  X  |  C  |  D  |  V  |    |  M  |  H   |  ,  |  .  |  /  |
-//               |     |Gm-Sys| SPC |   | ENT |L-Num| ALT |
+//               |     |Gm-Sys| SPC |   | ENT |L-Num | ALT |
                         bindings = <
    &kp Q           &kp W    &kp F      &kp P     &kp B         &kp J     &kp L    &kp I       &kp O     &kp BSPC   
    &kp A           &kp R    &kp S      &kp I     &kp G         &kp K     &kp N    &kp E       &kp I     &kp O
@@ -36,6 +36,7 @@
                             &trans     &to2      &kp SPACE     &kp RET   &mo 1    &kp RALT 
                         >;
                 };
+
                 num_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
@@ -51,26 +52,27 @@
                         >;
                 };
 
-		sys_layer {
+		fun_layer {
                         label = "SYSTEM";
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
 // |   6   |  7  |  8  |  9  |   0   |   |     |     |     |     |     |
-// |L-Ctrl |  Z  |  X  |  C  |   V   |   |  _  |     |     |     |     |
-//                    |L-Def|L-GNum| SPC |   | ENT |     | ALT |
+// |L-Ctrl |  Z  |  X  |  C  |   V   |   |     |     |     |     |     |
+//                    |L-Def|L-GNum| SPC |     |     |     |     |
                         bindings = <
-   &kp N1     &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
-   &kp N6     &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL   &kp Z   &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                       &to 0    &to3     &kp SPACE   &trans       &trans       &trans
+   &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
+   &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
+   &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
+                        &to 0    &to3     &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
+
                 game_layer {
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |   R   |   |     |     |     |     |     |
 // |L-Shft|  A  |  S  |  D  |   F   |   |     |     |     |     |     |
-// |L-Ctrl|  Z  |  X  |  C  |   V   |   |  _  |     |     |     |     |
+// |L-Ctrl|  Z  |  X  |  C  |   V   |   |     |     |     |     |     |
 //                    |L-Def|L-GNum| SPC |    | ENT |     |     |
                         bindings = <
    &kp ESC     &kp Q   &kp W   &kp E   &kp R       &trans       &trans       &trans       &trans       &trans
@@ -84,12 +86,12 @@
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
 // |   6   |  7  |  8  |  9  |   0   |   |     |     |     |     |     |
-// |L-Ctrl |  Z  |  X  |  C  |   V   |   |  _  |     |     |     |     |
-//                    |L-Def|L-GNum| SPC |   | ENT |     | ALT |
+// |L-Ctrl |  Z  |  X  |  C  |   V   |   |     |     |     |     |     |
+//                    |L-Def|L-GNum| SPC |     | ENT |     | ALT |
                         bindings = <
-   &kp N1     &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
-   &kp N6     &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL   &kp Z   &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
+   &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
+   &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
+   &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
                        &trans   &trans   &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
