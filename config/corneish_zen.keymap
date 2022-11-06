@@ -4,11 +4,13 @@
 
 #define DEFAULT 0
 #define NUM     1
-#define GAME    2
-#define GAMENUM 3
+#define SYS     2
+#define GAME    3
+#define GAMENUM 4
 
-#include "combos.dtsi" // include after defining layers
-#include "keypos.h"  //used to define keys for combos
+#include "keypos.h"       // Used to define keys for combos
+#include "combos.dtsi"    // Include after defining layers
+#include "tapdance.dtsi"  // Tap dance combos
 
 / {
   chosen {
@@ -26,12 +28,12 @@
 //   |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
 //   |Sft-A|  R  |  S  |  I  |  G  |   |  K  |  N   |  E  |  I  |  O  |
 //   |  Z  |  X  |  C  |  D  |  V  |   |  M  |  H   |  ,  |  .  |  /  |
-//                   |     |L-Gam| SPC |   | ENT |L-Num| ALT |
+//               |     |Gm-Sys| SPC |   | ENT |L-Num| ALT |
                         bindings = <
    &kp Q           &kp W    &kp F      &kp P     &kp B         &kp J     &kp L    &kp I       &kp O     &kp BSPC   
    &ht_bl LSHFT A  &kp R    &kp S      &kp I     &kp G         &kp K     &kp N    &kp E       &kp I     &kp O
    &kp Z           &kp X    &kp C      &kp D     &kp V         &kp M     &kp H    &kp COMMA   &kp DOT   &kp FSLH
-                            &trans     &to 2     &kp SPACE     &kp RET   &mo 1    &kp RALT 
+                            &trans     &td0     &kp SPACE     &kp RET   &mo 1    &kp RALT 
                         >;
                 };
                 num_layer {
@@ -49,6 +51,20 @@
                         >;
                 };
 
+				sys_layer {
+                        label = "SYSTEM";
+// -----------------------------------------------------------------------------------------
+// |   1   |  2  |  3  |  4  |   5   |   |     |     |     |     |     |
+// |   6   |  7  |  8  |  9  |   0   |   |     |     |     |     |     |
+// |L-Ctrl |  Z  |  X  |  C  |   V   |   |  _  |     |     |     |     |
+//                    |L-Def|L-GNum| SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp N1     &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
+   &kp N6     &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
+   &kp LCTRL   &kp Z   &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
+                       &trans   &trans   &kp SPACE   &trans       &trans       &trans
+                        >; 
+                };
                 game_layer {
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
