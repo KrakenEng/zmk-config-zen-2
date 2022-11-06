@@ -27,11 +27,11 @@
 //   |Sft-A|  R  |  S  |  T  |  G  |    |  K  |  N   |  E  |  I  |  O  |
 //   |  Z  |  X  |  C  |  D  |  V  |    |  M  |  H   |  ,  |  .  |  /  |
 //               |     |Gm-Sys| SPC |   | ENT |L-Num | ALT |
-                        bindings = <
-   &kp Q  &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BKSP   
-   &kp A  &kp R &kp S &kp T &kp G   &kp K &kp N  &kp E     &kp I   &kp O
-   &kp Z  &kp X &kp C &kp D &kp V   &kp M &kp H  &kp COMMA &kp DOT &kp FSLH
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                        bindings = < 
+   &kp Q     &kp W    &kp F    &kp P &kp B     &kp J   &kp L   &kp U       &kp Y     &kp BKSP   
+   &kp A     &kp R    &kp S    &kp T &kp G     &kp K   &kp N   &kp E       &kp I     &kp O
+   &kp Z     &kp X    &kp C    &kp D &kp V     &kp M   &kp H   &kp COMMA   &kp DOT   &kp FSLH
+                  &kp LGUI &to 1 &kp SPACE     &kp RET &mo 1 &kp RALT
                         >;
                 };
                                num_layer {
