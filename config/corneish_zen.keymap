@@ -28,10 +28,10 @@
    &kp Q           &kp W    &kp F      &kp P     &kp B         &kp J     &kp L    &kp I       &kp O     &kp BSPC   
    &kp A           &kp R    &kp S      &kp I     &kp G         &kp K     &kp N    &kp E       &kp I     &kp O
    &kp Z           &kp X    &kp C      &kp D     &kp V         &kp M     &kp H    &kp COMMA   &kp DOT   &kp FSLH
-                            &trans     &to2      &kp SPACE     &kp RET   &mo 1    &kp RALT 
+                                  &trans     &to2      &kp SPACE     &kp RET   &mo 1    &kp RALT 
                         >;
                 };
-                lower_layer {
+                num_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -46,7 +46,7 @@
                         >;
                 };
 
-                raise_layer {
+                fun_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
