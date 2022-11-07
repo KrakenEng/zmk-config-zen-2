@@ -10,8 +10,10 @@
 
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) 
-  combo_NAME { 
+
+COMBO { 
     compatible = "zmk,combos";
+    name = <NAME>;
     bindings = <BINDINGS>;        // Behavior when combo is triggered
     key-positions = <KEYPOS>;     // Trigger Keys
     layers = <LAYERS>;            // Layers the combo can be triggered on
