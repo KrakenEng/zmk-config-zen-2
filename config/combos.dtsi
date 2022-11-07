@@ -60,14 +60,14 @@
         cc_copy {
             timeout-ms = <50>;
             key-positions = <LB2 LB3>;
-            bindings = <&kp LS(&kp C)>;
+            bindings = <&kp LC(C)>;
             layers = <0>;
         };
 
         cc_paste {
             timeout-ms = <50>;
             key-positions = <LB1 LB2>;
-            bindings = <&kp LS(&kp V)>;
+            bindings = <&kp LC(V)>;
             layers = <0>;
         };
 
