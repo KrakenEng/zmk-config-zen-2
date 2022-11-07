@@ -7,11 +7,5 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
-// use global-quick-tap-ms for combos (requires PR 1387)
-#undef COMBO_HOOK
-#define COMBO_HOOK global-quick-tap-ms = <125>;
-
-#define COMBO_TERM_FAST 20
-#define COMBO_TERM_SLOW 35
 
 /* Punctuation (horizontal left hand) */
