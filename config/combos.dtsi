@@ -26,3 +26,5 @@
         };
     };
 };
+
+COMBO(cc_esc, &kp ESC, LT3 LT4, 0)
