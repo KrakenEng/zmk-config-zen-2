@@ -11,12 +11,13 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) 
 
-COMBO { 
-    compatible = "zmk,combos";
-    name = <NAME>;
-    bindings = <BINDINGS>;        // Behavior when combo is triggered
-    key-positions = <KEYPOS>;     // Trigger Keys
-    layers = <LAYERS>;            // Layers the combo can be triggered on
-  };
-
-
+/ {
+    combos {
+        compatible = "zmk,combos";
+        cc_esc {
+            timeout-ms = <50>;
+            key-positions = <LT3 LT4>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
