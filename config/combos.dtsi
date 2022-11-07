@@ -8,26 +8,40 @@
           ╰─────────────╯ ╰─────────────╯ */
 
 
-
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-  };
-
 / {
     combos {
         compatible = "zmk,combos";
+        
         cc_esc {
             timeout-ms = <50>;
             key-positions = <LT3 LT2>;
             bindings = <&kp ESC>;
         };
+
+        cc_lpara {
+            timeout-ms = <50>;
+            key-positions = <RM0 RM1>;
+            bindings = <&kp ESC>;
+        };
+        
+        cc_rpara {
+            timeout-ms = <50>;
+            key-positions = <RM1 RM2>;
+            bindings = <&kp ESC>;
+        };
+
+        cc_lbrac {
+            timeout-ms = <50>;
+            key-positions = <RT0 RT1>;
+            bindings = <&kp ESC>;
+        };
+        
+        cc_rbrac {
+            timeout-ms = <50>;
+            key-positions = <RT1 RT2>;
+            bindings = <&kp ESC>;
+        };
+        
+
     };
-};
-
-/ {
-COMBO(cc_esc2, &kp ESC, LT3 LT4, 0)
-
 };
