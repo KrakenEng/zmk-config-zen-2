@@ -39,6 +39,11 @@
             layers = <0>;
         };
 
+        /-----------------------------------------
+        // Left Bottom
+
+        
+
         //-----------------------------------------
         // Right Top
 
@@ -53,6 +58,13 @@
             timeout-ms = <50>;
             key-positions = <RT2 RT3>;
             bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+        cc_del {
+            timeout-ms = <50>;
+            key-positions = <RT3 RT4>;
+            bindings = <&kp DEL>;
             layers = <0>;
         };
 
