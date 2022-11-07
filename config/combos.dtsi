@@ -11,37 +11,92 @@
 / {
     combos {
         compatible = "zmk,combos";
+
+        //-----------------------------------------        
+        // Left Top
         
         cc_esc {
             timeout-ms = <50>;
             key-positions = <LT3 LT2>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
 
-        cc_lpara {
+        //-----------------------------------------
+        // Left Mid
+
+        cc_excl {
             timeout-ms = <50>;
-            key-positions = <RM0 RM1>;
-            bindings = <&kp ESC>;
+            key-positions = <LM1 LM2>;
+            bindings = <&kp EXCL>;
+            layers = <0>;
         };
         
-        cc_rpara {
+        cc_ques {
             timeout-ms = <50>;
-            key-positions = <RM1 RM2>;
-            bindings = <&kp ESC>;
+            key-positions = <LM2 LM3>;
+            bindings = <&kp QMARK>;
+            layers = <0>;
         };
+
+        //-----------------------------------------
+        // Right Top
 
         cc_lbrac {
             timeout-ms = <50>;
-            key-positions = <RT0 RT1>;
+            key-positions = <RT1 RT2>;
             bindings = <&kp ESC>;
+            layers = <0>;
         };
         
         cc_rbrac {
             timeout-ms = <50>;
-            key-positions = <RT1 RT2>;
+            key-positions = <RT2 RT3>;
             bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+        //-----------------------------------------
+        // Right Mid
+        
+        cc_lpara {
+            timeout-ms = <50>;
+            key-positions = <RM1 RM2>;
+            bindings = <&kp ESC>;
+            layers = <0>;
         };
         
+        cc_rpara {
+            timeout-ms = <50>;
+            key-positions = <RM2 RM3>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
 
+        //-----------------------------------------
+        // Right Bottom
+
+        cc_cut {
+            timeout-ms = <50>;
+            key-positions = <RB3 RB4>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        
+        cc_copy {
+            timeout-ms = <50>;
+            key-positions = <RB2 RB3>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+        cc_paste {
+            timeout-ms = <50>;
+            key-positions = <RB1 RB2>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+        
     };
 };
