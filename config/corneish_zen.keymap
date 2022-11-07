@@ -11,14 +11,14 @@
 #include "keypos.h"       // Used to define keys for combos
 #include "combos.dtsi"    // Include after defining layers
 #include "tapdance.dtsi"  // Tap dance combos
-
+/*
 / {
   chosen {
    // zmk,matrix_transform = &default_transform;
     zmk,matrix_transform = &five_column_transform;
   };
 };
-
+*/
 / {
         keymap {
                 compatible = "zmk,keymap";
