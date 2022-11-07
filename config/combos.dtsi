@@ -27,4 +27,4 @@
     };
 };
 
-COMBO(cc_esc, &kp ESC, LT3 LT4, 0)
+COMBO(cc_esc2, &kp ESC, LT3 LT4, 0)
