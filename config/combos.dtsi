@@ -39,9 +39,37 @@
             layers = <0>;
         };
 
+        cc_at {
+            timeout-ms = <50>;
+            key-positions = <LM3 LM4>;
+            bindings = <&kp AT>;
+            layers = <0>;
+        };
+
+
         //-----------------------------------------
         // Left Bottom
 
+        cc_cut {
+            timeout-ms = <50>;
+            key-positions = <LB3 LB4>;
+            bindings = <&kp LS(&kp X)>;
+            layers = <0>;
+        };
+        
+        cc_copy {
+            timeout-ms = <50>;
+            key-positions = <LB2 LB3>;
+            bindings = <&kp LS(&kp C)>;
+            layers = <0>;
+        };
+
+        cc_paste {
+            timeout-ms = <50>;
+            key-positions = <LB1 LB2>;
+            bindings = <&kp LS(&kp V)>;
+            layers = <0>;
+        };
 
 
         //-----------------------------------------
@@ -88,26 +116,6 @@
         //-----------------------------------------
         // Right Bottom
 
-        cc_cut {
-            timeout-ms = <50>;
-            key-positions = <RB3 RB4>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
-        
-        cc_copy {
-            timeout-ms = <50>;
-            key-positions = <RB2 RB3>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
-
-        cc_paste {
-            timeout-ms = <50>;
-            key-positions = <RB1 RB2>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
 
         
     };

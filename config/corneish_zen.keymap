@@ -33,27 +33,28 @@
 // -----------------------------------------------------------------------------------------
 //   |Tab-Q|  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
 //   |Sft-A|  R  |  S  |  T  |  G  |   |  K  |  N   |  E  |  I  |Sft-O|
-//   |Ctl-Z|  X  |  C  |  D  |  V  |   |  M  |  H   |  ,  |  .  |  /  |
+//   |Ctl-Z|  X  |  C  |  D  |  V  |   |  M  |  H   | ,;: | .'" |  /  |
 //               |     | Sys | SPC |   | ENT |L-Num | ALT |
                         bindings = < 
    &mt TAB Q      &kp W    &kp F    &kp P  &kp B        &kp J    &kp L   &kp U       &kp Y     &kp BKSP   
    &mt LSHFT A    &kp R    &kp S    &kp T  &kp G        &kp K    &kp N   &kp E       &kp I     &mt RSHFT O
-   &mt LCTRL Z    &kp X    &kp C    &kp D  &kp V        &kp M    &kp H   &kp COMMA   &kp DOT   &kp FSLH
+   &mt LCTRL Z    &kp X    &kp C    &kp D  &kp V        &kp M    &kp H   &td0        &td1      &kp FSLH
                            &trans   &to 2  &kp SPACE    &kp RET  &mo 1   &kp RALT
                         >;
                 };
+
                 num_layer {                   //Layer 1
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
 // |      |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
 // | Shft | lft | dwn | rht |     |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
 // |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
-//              |L-Def|L-Def| SPC |   | ENT | BKSP |      |
+//              |L-Def|L-Def| SPC |   | ENT | BKSP | Shft |
                         bindings = <
    &trans       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
    &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
    &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
-                             &to 0        &to 0        &kp SPACE      &kp RET     &kp BSPC      &trans
+                             &to 0        &to 0        &kp SPACE      &kp RET     &kp BSPC      &kp RSHFT
                         >;
                 };
 
@@ -71,7 +72,8 @@
                         &to 0    &to 3    &kp SPACE   &trans       &trans       &trans
                         >;
                 };
-                 game_layer {                   //Layer 3
+
+                game_layer {                   //Layer 3
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
 // |Tab ESC| Q  |  W  |  E  |   R   |   |     |     |     |     |     |
