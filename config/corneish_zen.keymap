@@ -8,6 +8,14 @@
 #define GAME    3
 #define GAMENUM 4
 
+#include "keypos.h"       // Used to define keys for combos
+#include "combos.dtsi"    // Include after defining layers
+#include "tapdance.dtsi"  // Tap dance combos
+
+&ht {  // hold-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
 
 / {
   chosen {
@@ -29,9 +37,9 @@
 //               |     |Gm-Sys| SPC |   | ENT |L-Num | ALT |
                         bindings = < 
    &kp Q     &kp W    &kp F    &kp P &kp B     &kp J   &kp L   &kp U       &kp Y     &kp BKSP   
-   &kp A     &kp R    &kp S    &kp T &kp G     &kp K   &kp N   &kp E       &kp I     &kp O
+   &ht LSHFT A     &kp R    &kp S    &kp T &kp G     &kp K   &kp N   &kp E       &kp I     &kp O
    &kp Z     &kp X    &kp C    &kp D &kp V     &kp M   &kp H   &kp COMMA   &kp DOT   &kp FSLH
-                  &kp LGUI &to 2 &kp SPACE     &kp RET &mo 1 &kp RALT
+                  &td0 &to 2 &kp SPACE     &kp RET &mo 1 &kp RALT
                         >;
                 };
                                num_layer {
