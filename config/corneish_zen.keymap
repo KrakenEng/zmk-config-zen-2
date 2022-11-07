@@ -12,11 +12,10 @@
 #include "combos.dtsi"    // Include after defining layers
 #include "tapdance.dtsi"  // Tap dance combos
 
-&ht {  // hold-tap config
+&ht { // hold-tap config
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-};
+    };
 
 / {
   chosen {
