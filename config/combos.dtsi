@@ -53,7 +53,7 @@
         cc_cut {
             timeout-ms = <50>;
             key-positions = <LB3 LB4>;
-            bindings = <&kp LS(&kp X)>;
+            bindings = <&kp LC(X)>;
             layers = <0>;
         };
         
