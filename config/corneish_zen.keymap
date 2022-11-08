@@ -107,15 +107,15 @@
                 qwerty_layer {                   //Layer 5
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-//   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |BKSP-p|
+//   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |BKSP-P|
 //   |Sft-A|  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | Sft |
 //   |Ctl-Z|  X  |  C  |  V  |  B  |   |  N  |  M   | ,;: | .'" |Ctl-/|
-//               |L-def|L-def| SPC |   | ENT |L-Num | ALT |
+//               |L-def|L-def| SPC |   | ENT |L-Num | DEL |
                         bindings = < 
    &mt TAB Q      &kp W    &kp E    &kp R  &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
    &mt LSHFT A    &kp S    &kp D    &kp F  &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
    &mt LCTRL Z    &kp X    &kp C    &kp V  &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                           &to 0    &to 0  &kp SPACE    &kp RET  &mo 1   &kp RALT
+                           &to 0    &to 0  &kp SPACE    &kp RET  &mo NUM   &kp DEL
                         >;
                 };
         };
