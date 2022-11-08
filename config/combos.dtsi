@@ -33,7 +33,7 @@
             bindings = <&kp TILDE>;
             layers = <0>;
         };
-
+ 
         //-----------------------------------------
         // Left Mid
 
@@ -51,7 +51,7 @@
         };
         cc_at {
             timeout-ms = <50>;
-            key-positions = <LM3 LM4>;
+            key-positions = <LM0 LM1>;
             bindings = <&kp AT>;
             layers = <0>;
         };
