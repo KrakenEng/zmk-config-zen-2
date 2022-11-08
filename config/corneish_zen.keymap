@@ -55,7 +55,7 @@
    &trans       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
    &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
    &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
-                             &to 0        &to 5        &kp SPACE      &kp RET     &trans        &kp BKSP
+                             &to 0        &tog 5        &kp SPACE      &kp RET     &trans        &kp BKSP
                         >; 
                 };
 
@@ -115,7 +115,7 @@
    &mt TAB Q      &kp W    &kp E    &kp R  &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
    &mt LSHFT A    &kp S    &kp D    &kp F  &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
    &mt LCTRL Z    &kp X    &kp C    &kp V  &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                           &to 0    &to 0  &kp SPACE    &kp RET  &mo NUM   &kp DEL
+                           &to 0    &to 0  &kp SPACE    &kp RET  &mo 1   &kp DEL
                         >;
                 };
         };
