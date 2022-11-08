@@ -40,7 +40,7 @@
    &mt TAB Q      &kp W    &kp F    &kp P  &kp B        &kp J    &kp L   &kp U       &kp Y     &kp BKSP   
    &mt LSHFT A    &kp R    &kp S    &kp T  &kp G        &kp K    &kp N   &kp E       &kp I     &mt RSHFT O
    &mt LCTRL Z    &kp X    &kp C    &kp D  &kp V        &kp M    &kp H   &td0        &td1      &mt RCTRL FSLH
-                           &trans   &tog 2  &kp SPACE    &kp RET  &mo 1   &kp RALT
+                           &trans   &to 2  &kp SPACE    &kp RET  &tog 1   &kp RALT
                         >;
                 };
 
@@ -55,7 +55,7 @@
    &trans       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
    &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
    &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
-                             &tog 0        &tog 5        &kp SPACE      &kp RET     &trans        &kp BKSP
+                             &to 0        &to 5        &kp SPACE      &kp RET     &trans        &kp BKSP
                         >; 
                 };
 
@@ -70,7 +70,7 @@
    &kp K_STOP2  &kp K_PP     &kp K_PREV     &kp K_NEXT     &trans      &trans       &trans       &trans       &trans       &trans
    &none        &kp K_MUTE   &kp K_VOL_DN   &kp K_VOL_UP   &trans      &trans       &trans       &trans       &trans       &trans
    &kp GUI      &none        &none          &none          &none       &trans       &trans       &trans       &trans       &trans
-                             &tog 0          &tog 3          &kp SPACE   &trans       &tog 0        &trans
+                             &to 0          &to 3          &kp SPACE   &trans       &to 0        &trans
                         >;
                 };
 
@@ -85,7 +85,7 @@
    &kp TAB       &kp Q   &kp W   &kp E   &kp R       &trans       &trans       &trans       &trans       &trans
    &kp LSHFT     &kp A   &kp S   &kp D   &kp F       &trans       &trans       &trans       &trans       &trans
    &kp LCTRL     &kp Z   &kp X   &kp C   &kp V       &trans       &trans       &trans       &trans       &trans
-                         &tog 0   &mo 4   &kp SPACE   &kp RET      &trans       &trans
+                         &og 0   &mo 4   &kp SPACE   &kp RET      &trans       &trans
                         >; 
                 };
 
@@ -115,7 +115,7 @@
    &mt TAB Q      &kp W    &kp E    &kp R  &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
    &mt LSHFT A    &kp S    &kp D    &kp F  &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
    &mt LCTRL Z    &kp X    &kp C    &kp V  &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                           &tog 0    &tog 0  &kp SPACE    &kp RET  &mo 1   &kp DEL
+                           &to 0    &to 0  &kp SPACE    &kp RET  &tog 1   &kp DEL
                         >;
                 };
         };
