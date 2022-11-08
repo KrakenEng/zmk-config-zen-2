@@ -61,15 +61,15 @@
                 sys_layer {                   //Layer 2
                         label = "SYSTEM";
 // -----------------------------------------------------------------------------------------
-// |   1   |  2  |  3  |  4  |  5  |   |     |     |     |     |     |
-// |   6   |  7  |  8  |  9  |  0  |   |     |     |     |     |     |
-// |L-Ctrl |  Z  |  X  |  C  |  V  |   |     |     |     |     |     |
+// | Stop | Pause |Vid <<|Vid >>|  5  |   |     |     |     |     |     |
+// |   6   | Mute | Vol- | Vol+ |  0  |   |     |     |     |     |     |
+// | GUI  |  Z   |  X   |  C   |  V  |   |     |     |     |     |     |
 //               |L-Def|L-Game| SPC |  |     |     |     |
                         bindings = <
-   &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
-   &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                        &to 0    &to 3    &kp SPACE   &trans       &trans       &trans
+   &kp K_STOP2  &kp K_PP     &kp K_PREV     &kp K_NEXT     &kp N5      &trans       &trans       &trans       &trans       &trans
+   &kp N6       &kp K_MUTE   &kp K_VOL_DN   &kp K_VOL_UP   &kp N0      &trans       &trans       &trans       &trans       &trans
+   &kp GUI      &kp Z        &kp X          &kp C          &kp V       &trans       &trans       &trans       &trans       &trans
+                             &to 0          &to 3          &kp SPACE   &trans       &trans       &trans
                         >;
                 };
 
