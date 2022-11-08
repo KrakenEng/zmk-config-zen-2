@@ -17,21 +17,19 @@
         
         cc_esc {
             timeout-ms = <50>;
-            key-positions = <LT2 LT3>;
+            key-positions = <LT3 LT4>;
             bindings = <&kp ESC>;
-            layers = <0>;
+            layers = <0 3>;
         };
-
         cc_hash {
             timeout-ms = <50>;
             key-positions = <LT1 LT2>;
             bindings = <&kp HASH>;
             layers = <0>;
         };
-
         cc_tilde {
             timeout-ms = <50>;
-            key-positions = <LT3 LT4>;
+            key-positions = <LT2 LT3>;
             bindings = <&kp TILDE>;
             layers = <0>;
         };
@@ -45,14 +43,12 @@
             bindings = <&kp EXCL>;
             layers = <0>;
         };
-        
         cc_ques {
             timeout-ms = <50>;
             key-positions = <LM2 LM3>;
             bindings = <&kp QMARK>;
             layers = <0>;
         };
-
         cc_at {
             timeout-ms = <50>;
             key-positions = <LM3 LM4>;
@@ -68,22 +64,19 @@
             key-positions = <LB3 LB4>;
             bindings = <&kp LC(X)>;
             layers = <0>;
-        };
-        
+        };        
         cc_copy {
             timeout-ms = <50>;
             key-positions = <LB2 LB3>;
             bindings = <&kp LC(C)>;
             layers = <0>;
         };
-
         cc_paste {
             timeout-ms = <50>;
             key-positions = <LB1 LB2>;
             bindings = <&kp LC(V)>;
             layers = <0>;
         };
-
 
         //-----------------------------------------
         // Right Top
@@ -93,15 +86,13 @@
             key-positions = <RT1 RT2>;
             bindings = <&kp LBKT>;
             layers = <0>;
-        };
-        
+        };        
         cc_rbkt {
             timeout-ms = <50>;
             key-positions = <RT2 RT3>;
             bindings = <&kp RBKT>;
             layers = <0>;
         };
-
         cc_del {
             timeout-ms = <50>;
             key-positions = <RT3 RT4>;
@@ -117,8 +108,7 @@
             key-positions = <RM1 RM2>;
             bindings = <&kp LPAR>;
             layers = <0>;
-        };
-        
+        };        
         cc_rpar {
             timeout-ms = <50>;
             key-positions = <RM2 RM3>;
@@ -134,8 +124,7 @@
             key-positions = <RB1 RB2>;
             bindings = <&kp GT>;
             layers = <0>;
-        };
-        
+        };        
         cc_lthan {
             timeout-ms = <50>;
             key-positions = <RB2 RB3>;
