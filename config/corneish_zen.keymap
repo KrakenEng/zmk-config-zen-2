@@ -7,6 +7,7 @@
 #define SYS     2
 #define GAME    3
 #define GAMENUM 4
+#define QWERTY  5
 
 #include "keypos.h"       // Used to define keys for combos
 #include "combos.dtsi"    // Include after defining layers
@@ -49,13 +50,13 @@
 // |      |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
 // | Shft | lft | dwn | rht |     |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
 // |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
-//              |L-Def|L-Def| SPC |   | ENT | BKSP | Shft |
+//              |L-Def|L-Def| SPC |   | ENT |      | bksp |
                         bindings = <
    &trans       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
    &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
    &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
-                             &to 0        &to 0        &kp SPACE      &kp RET     &kp BSPC      &kp RSHFT
-                        >;
+                             &to 0        &to 5        &kp SPACE      &kp RET     &trans        &kp BKSP
+                        >; 
                 };
 
                 sys_layer {                   //Layer 2
@@ -101,6 +102,21 @@
    &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
                         &trans   &trans   &kp SPACE   &trans       &trans       &trans
                         >; 
+                };
+
+                qwerty_layer {                   //Layer 5
+                        label = "QWERTY";
+// -----------------------------------------------------------------------------------------
+//   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |BKSP-p|
+//   |Sft-A|  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | Sft |
+//   |Ctl-Z|  X  |  C  |  V  |  B  |   |  N  |  M   | ,;: | .'" |Ctl-/|
+//               |L-def|L-def| SPC |   | ENT |L-Num | ALT |
+                        bindings = < 
+   &mt TAB Q      &kp W    &kp E    &kp R  &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
+   &mt LSHFT A    &kp S    &kp D    &kp F  &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
+   &mt LCTRL Z    &kp X    &kp C    &kp V  &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
+                           &to 0    &to 0  &kp SPACE    &kp RET  &mo 1   &kp RALT
+                        >;
                 };
         };
 };
