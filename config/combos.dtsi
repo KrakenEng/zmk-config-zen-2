@@ -19,19 +19,25 @@
             timeout-ms = <50>;
             key-positions = <LT3 LT4>;
             bindings = <&kp ESC>;
-            layers = <0 3 5>;
+            layers = <0 3 1>;
         };
         cc_hash {
             timeout-ms = <50>;
             key-positions = <LT1 LT2>;
             bindings = <&kp HASH>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
         cc_tilde {
             timeout-ms = <50>;
             key-positions = <LT2 LT3>;
             bindings = <&kp TILDE>;
-            layers = <0 5>;
+            layers = <0 1>;
+        };
+        cc_tab {
+            timeout-ms = <50>;
+            key-positions = <LT0 LT1>;
+            bindings = <&kp TAB>;
+            layers = <0 1>;
         };
  
         //-----------------------------------------
@@ -41,19 +47,19 @@
             timeout-ms = <50>;
             key-positions = <LM1 LM2>;
             bindings = <&kp EXCL>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
         cc_ques {
             timeout-ms = <50>;
             key-positions = <LM2 LM3>;
             bindings = <&kp QMARK>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
         cc_at {
             timeout-ms = <50>;
             key-positions = <LM0 LM1>;
             bindings = <&kp AT>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         //-----------------------------------------
@@ -63,19 +69,19 @@
             timeout-ms = <50>;
             key-positions = <LB3 LB4>;
             bindings = <&kp LC(X)>;
-            layers = <0 5>;
+            layers = <0 1>;
         };        
         cc_copy {
             timeout-ms = <50>;
             key-positions = <LB2 LB3>;
             bindings = <&kp LC(C)>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
         cc_paste {
             timeout-ms = <50>;
             key-positions = <LB1 LB2>;
             bindings = <&kp LC(V)>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         //-----------------------------------------
@@ -85,19 +91,19 @@
             timeout-ms = <50>;
             key-positions = <RT1 RT2>;
             bindings = <&kp LBKT>;
-            layers = <0 5>;
+            layers = <0 1>;
         };        
         cc_rbkt {
             timeout-ms = <50>;
             key-positions = <RT2 RT3>;
             bindings = <&kp RBKT>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
         cc_del {
             timeout-ms = <50>;
             key-positions = <RT3 RT4>;
             bindings = <&kp DEL>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         //-----------------------------------------
@@ -107,13 +113,13 @@
             timeout-ms = <50>;
             key-positions = <RM1 RM2>;
             bindings = <&kp LPAR>;
-            layers = <0 5>;
+            layers = <0 1>;
         };        
         cc_rpar {
             timeout-ms = <50>;
             key-positions = <RM2 RM3>;
             bindings = <&kp RPAR>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         //-----------------------------------------
@@ -123,13 +129,13 @@
             timeout-ms = <50>;
             key-positions = <RB1 RB2>;
             bindings = <&kp GT>;
-            layers = <0 5>;
+            layers = <0 1>;
         };        
         cc_lthan {
             timeout-ms = <50>;
             key-positions = <RB2 RB3>;
             bindings = <&kp LT>;
-            layers = <0 5>;
+            layers = <0 1>;
         };
 
         

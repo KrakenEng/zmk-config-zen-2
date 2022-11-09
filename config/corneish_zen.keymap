@@ -32,15 +32,15 @@
                 default_layer {
                         label = "COLEMAK";
 // -----------------------------------------------------------------------------------------
-//   |Tab-Q|  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
+//   |Alt-Q|  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
 //   |Sft-A|  R  |  S  |  T  |  G  |   |  K  |  N   |  E  |  I  |Sft-O|
 //   |Ctl-Z|  X  |  C  |  D  |  V  |   |  M  |  H   | ,;: | .'" |Ctl-/|
-//               |     | Sys | SPC |   | ENT |L-Num | DEL |
+//               | Alt | Sys | SPC |   | ENT |L-Num | DEL |
                         bindings = < 
-   &mt TAB Q      &kp W    &kp F    &kp P  &kp B        &kp J    &kp L   &kp U       &kp Y     &kp BKSP   
+   &mt ALT Q      &kp W    &kp F    &kp P  &kp B        &kp J    &kp L   &kp U       &kp Y     &kp BKSP   
    &mt LSHFT A    &kp R    &kp S    &kp T  &kp G        &kp K    &kp N   &kp E       &kp I     &mt RSHFT O
    &mt LCTRL Z    &kp X    &kp C    &kp D  &kp V        &kp M    &kp H   &td0        &td1      &mt RCTRL FSLH
-                           &trans   &to 2  &kp SPACE    &kp RET  &mo 5   &kp DEL
+                           &kp ALT  &to 2  &kp SPACE    &kp RET  &mo 5   &kp DEL
                         >;
                 };
 
@@ -50,12 +50,12 @@
 //   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |BKSP-P|
 //   |Sft-A|  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | Sft |
 //   |Ctl-Z|  X  |  C  |  V  |  B  |   |  N  |  M   | ,;: | .'" |Ctl-/|
-//               |L-def|L-def| SPC |   | ENT |L-Num | DEL |
+//               |L-def| ALT | SPC |   | ENT |L-Num | DEL |
                         bindings = < 
-   &mt TAB Q      &kp W    &kp E    &kp R  &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
-   &mt LSHFT A    &kp S    &kp D    &kp F  &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
-   &mt LCTRL Z    &kp X    &kp C    &kp V  &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                           &to 0    &to 0  &kp SPACE    &kp RET  &mo 5   &kp DEL
+   &mt TAB Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
+   &mt LSHFT A    &kp S    &kp D    &kp F    &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
+   &mt LCTRL Z    &kp X    &kp C    &kp V    &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
+                           &kp ALT  &to 0    &kp SPACE    &kp RET  &mo 5   &kp DEL
                         >;
                 };
 
@@ -69,7 +69,7 @@
                         bindings = <
    &kp K_STOP2  &kp K_PP     &kp K_PREV     &kp K_NEXT     &trans      &trans       &trans       &trans       &trans       &trans
    &none        &kp K_MUTE   &kp K_VOL_DN   &kp K_VOL_UP   &trans      &trans       &trans       &trans       &trans       &trans
-   &kp GUI      &none        &none          &none          &none       &trans       &trans       &trans       &trans       &trans
+   &kp LGUI     &none        &none          &none          &none       &trans       &trans       &trans       &trans       &trans
                              &to 0          &to 3          &kp SPACE   &trans       &trans       &trans
                         >;
                 };
