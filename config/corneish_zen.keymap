@@ -47,15 +47,15 @@
                 qwerty_layer {                   //Layer 1
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-//   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |BKSP-P|
+//   |Tab-Q|  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |DEL-P|
 //   |Sft-A|  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  | Sft |
 //   |Ctl-Z|  X  |  C  |  V  |  B  |   |  N  |  M   | ,;: | .'" |Ctl-/|
-//               | ALT |L-Def| SPC |   | ENT |L-Num | DEL |
+//               | ALT |L-Def| SPC |   | ENT |L-Num | BKSP |
                         bindings = < 
-   &mt TAB Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U   &kp I       &kp O     &mt BKSP P
+   &mt TAB Q      &kp W    &kp E    &kp R    &kp T        &kp Y    &kp U   &kp I       &kp O     &mt DEL P
    &mt LSHFT A    &kp S    &kp D    &kp F    &kp G        &kp H    &kp J   &kp K       &kp L     &kp RSHFT
    &mt LCTRL Z    &kp X    &kp C    &kp V    &kp B        &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                           &kp LALT &to 0    &kp SPACE    &kp RET  &mo 5   &kp DEL
+                           &kp LALT &to 0    &kp SPACE    &kp RET  &mo 5   &kp BKSP
                         >;
                 };
 
@@ -68,7 +68,7 @@
 //               |L-Def|L-Game | SPC |   |     |     |     |
                         bindings = <
    &kp K_STOP2  &kp K_PP     &kp K_PREV     &kp K_NEXT     &trans      &trans       &trans       &trans       &trans       &trans
-   &none        &kp K_MUTE   &kp K_VOL_DN   &kp K_VOL_UP   &trans      &trans       &trans       &trans       &trans       &trans
+   &none        &kp K_MUTE   &kp C_VOL_DN   &kp C_VOL_UP   &trans      &trans       &trans       &trans       &trans       &trans
    &kp LGUI     &none        &none          &none          &none       &trans       &trans       &trans       &trans       &trans
                              &to 0          &to 3          &kp SPACE   &trans       &trans       &trans
                         >;
@@ -77,16 +77,16 @@
                 game_layer {                   //Layer 3
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
-// |  Tab |  Q  |  W  |  E  |   R   |   |     |     |     |     |     |
-// |L-Shft|  A  |  S  |  D  |   F   |   |     |     |     |     |     |
-// |L-Ctrl|  Z  |  X  |  C  |   V   |   |     |     |     |     |     |
-//              |L-Def|L-GNum| SPC |    | ENT |     |     |
+// |  Tab |  Q  |  W  |  E  |   TR   |   |  Y  |  U  |  I  |  O  |DEL-P |
+// |L-Shft|  A  |  S  |  D  |   GF   |   |  H  |  J  |  K  |  L  | SHFT |
+// |L-Ctrl|  Z  |  X  |  C  |   BV   |   |  N  |  M  |  ,  |  .  |  /   |
+//              |L-Def|L-GNum| SPC |    | ENT | NUM | BSKP|
                         bindings = <
-   &kp TAB       &kp Q   &kp W   &kp E   &kp R       &trans       &trans       &trans       &trans       &trans
-   &kp LSHFT     &kp A   &kp S   &kp D   &kp F       &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL     &kp Z   &kp X   &kp C   &kp V       &trans       &trans       &trans       &trans       &trans
-                         &to 0   &mo 4   &kp SPACE   &kp RET      &trans       &trans
-                        >; 
+   &kp TAB       &kp Q   &kp W   &kp E   &mt T R       &kp Y    &kp U   &kp I       &kp O     &mt DEL P
+   &kp LSHFT     &kp A   &kp S   &kp D   &mt G F       &kp H    &kp J   &kp K       &kp L     &kp RSHFT
+   &kp LCTRL     &kp Z   &kp X   &kp C   &mt B V       &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
+                         &to 0   &mo 4   &kp SPACE   &kp RET  &mo 5   &kp BKSP
+                        >;
                 };
 
 		gamenum_layer {                   //Layer 4
