@@ -91,7 +91,7 @@
                 };
 
 		gamenum_layer {                   //Layer 4
-                        label = "NUMBERS";
+                        label = "GNUMBER";
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |  5   |   |     |     |     |     |     |
 // |   6   |  7  |  8  |  9  |  0   |   |     |     |     |     |     |
@@ -101,7 +101,7 @@
    &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
    &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
    &kp LSHFT   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                        &to 6    &to 3    &kp SPACE   &trans       &trans       &trans
+                        &to 5    &to 3    &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
 
@@ -113,10 +113,10 @@
 // |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
 //              |L-Def|L-QWE| SPC |   | ENT |      | bksp |
                         bindings = <
-   &kp ESC       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
-   &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
-   &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
-                             &to 0        &to 1        &kp SPACE      &kp RET     &trans        &kp BKSP
+   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
+   &kp F18      &kp F19      &kp F20      &kp F21      &kp F22         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
+   &trans       &trans       &trans       &trans       &trans          &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
+                             &trans       &trans       &to 0           &kp RET     &trans        &kp BKSP
                         >; 
 
                         
