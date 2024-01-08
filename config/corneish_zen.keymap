@@ -31,7 +31,7 @@
 
                 default_layer {
                         label = "COLEMAK";
-// -----------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------
 //   |TAB-Q|  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  | BKSP|
 //   |Sft-A|  R  |  S  |  T  |  G  |   |  K  |  N   |  E  |  I  |Sft-O|
 //   |Ctl-Z|  X  |  C  |  D  |  V  |   |  M  |  H   | ,;: | .'" |Ctl-/|
@@ -85,7 +85,7 @@
    &kp TAB       &kp Q   &kp W   &kp E   &mt T R       &kp Y    &kp U   &kp I       &kp O     &mt DEL P
    &kp LSHFT     &kp A   &kp S   &kp D   &mt G F       &kp H    &kp J   &kp K       &kp L     &kp RSHFT
    &kp LCTRL     &kp Z   &kp X   &kp C   &mt B V       &kp N    &kp M   &td0        &td1      &mt RCTRL FSLH
-                         &to 0   &mo 4   &kp SPACE   &kp RET  &mo 5   &kp BKSP
+                         &to 0   &to 4   &kp SPACE     &kp RET  &mo 5   &kp BKSP
                         >;
                 };
 
@@ -94,28 +94,43 @@
 // -----------------------------------------------------------------------------------------
 // |   1   |  2  |  3  |  4  |  5   |   |     |     |     |     |     |
 // |   6   |  7  |  8  |  9  |  0   |   |     |     |     |     |     |
-// |L-Ctrl |  Z  |  X  |  C  |  V   |   |     |     |     |     |     |
+// | LShft |  Z  |  X  |  C  |  V   |   |     |     |     |     |     |
 //               |     |     |      |   |     |     |     |
                         bindings = <
    &kp N1      &kp N2   &kp N3   &kp N4   &kp N5      &trans       &trans       &trans       &trans       &trans
    &kp N6      &kp N7   &kp N8   &kp N9   &kp N0      &trans       &trans       &trans       &trans       &trans
-   &kp LCTRL   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
-                        &trans   &trans   &kp SPACE   &trans       &trans       &trans
+   &kp LSHFT   &kp Z    &kp X    &kp C    &kp V       &trans       &trans       &trans       &trans       &trans
+                        &to 6    &to 3    &kp SPACE   &trans       &trans       &trans
                         >; 
                 };
 
                 num_layer {                   //Layer 5 
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |      |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
+// | ESC  |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
 // | Shft | lft | dwn | rht |     |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
 // |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
-//              |L-Def|L-Def| SPC |   | ENT |      | bksp |
+//              |L-Def|L-QWE| SPC |   | ENT |      | bksp |
                         bindings = <
-   &trans       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
+   &kp ESC       &trans       &kp UP       &trans       &trans         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
    &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &trans         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
    &trans       &trans       &trans       &trans       &trans         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
                              &to 0        &to 1        &kp SPACE      &kp RET     &trans        &kp BKSP
+                        >; 
+
+                        
+                deck_layer {                   //Layer 5 
+                        label = "DECK";
+// -----------------------------------------------------------------------------------------
+// | ESC  |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
+// | Shft | lft | dwn | rht |     |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
+// |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
+//              |L-Def|L-QWE| SPC |   | ENT |      | bksp |
+                        bindings = <
+   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
+   &kp F18      &kp F19      &kp F20      &kp F21      &kp F22         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
+   &trans       &trans       &trans       &trans       &trans          &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
+                             &to 0        &to 1        &kp SPACE       &kp RET     &trans        &kp BKSP
                         >; 
                 };
         };
