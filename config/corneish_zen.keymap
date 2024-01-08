@@ -108,14 +108,14 @@
                 num_layer {                   //Layer 5 
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// | ESC  |     |  up |     |     |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
-// | Shft | lft | dwn | rht |     |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
-// |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
+// | KP1  | KP2 | KP3 | KP4 | KP5 |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
+// | KP6  | KP7 | KP8 | KP9 | KP0 |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
+// | F13  | F14 | F15 | F16 | F17 |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
 //              |L-Def|L-QWE| SPC |   | ENT |      | bksp |
                         bindings = <
-   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
-   &kp F18      &kp F19      &kp F20      &kp F21      &kp F22         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
-   &trans       &trans       &trans       &trans       &trans          &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
+   &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &kp KP_N5         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
+   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_N0         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
+   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
                              &trans       &trans       &to 0           &kp RET     &trans        &kp BKSP
                         >; 
 
@@ -123,14 +123,14 @@
                 deck_layer {                   //Layer 6 
                         label = "DECK";
 // -----------------------------------------------------------------------------------------
-// | F13  | F14 | F15 | F16 | F17 |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
-// | F18  | F19 | F20 | F21 | F22 |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
-// |      |     |     |     |     |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
+// | KP1  | KP2 | KP3 | KP4 | KP5 |   |  -  | F7-7 | F8-8 | F9-9 | F12-* |
+// | KP6  | KP7 | KP8 | KP9 | KP0 |   |  +  | F4-4 | F5-5 | F6-6 | F11-/ |
+// | F13  | F14 | F15 | F16 | F17 |   |  0  | F1-1 | F2-2 | F3-3 | F10-. |
 //              |L-Def|L-QWE| SPC |   | ENT |      | bksp |
                         bindings = <
-   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
-   &kp F18      &kp F19      &kp F20      &kp F21      &kp F22         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
-   &trans       &trans       &trans       &trans       &trans          &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
+   &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4    &kp KP_N5         &kp MINUS   &mt F7 N7     &mt F8 N8     &mt F9 N9   &mt F12 STAR 
+   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9    &kp KP_N0         &kp PLUS    &mt F4 N4     &mt F5 N5     &mt F6 N6   &mt F11 FSLH 
+   &kp F13      &kp F14      &kp F15      &kp F16      &kp F17         &kp N0      &mt F1 N1     &mt F2 N2     &mt F3 N3   &mt F10 DOT 
                              &trans       &trans       &to 0           &kp RET     &trans        &kp BKSP
                         >; 
                 };
